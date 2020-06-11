@@ -15,7 +15,7 @@ const Cert = () => {
           <Typography>Issued: February 2020</Typography>
           <a
             style={{ textDecorationColor: "white", color: "white" }}
-            href="https://amazonaws.com"
+            href="https://www.youracclaim.com/badges/040beb89-0d89-462e-83a3-0029544cc863/public_url"
           >
             <Typography>Badge</Typography>
           </a>
@@ -32,7 +32,7 @@ const Cert = () => {
           <Typography>Issued: April 2020</Typography>
           <a
             style={{ textDecorationColor: "white", color: "white" }}
-            href="https://amazonaws.com"
+            href="https://graphacademy.neo4j.com/certificates/362a1440003ee5e6f6aa98d7bae0849b8b7811ee58714d0ec83d598f3e82ef40.pdf"
           >
             <Typography>Badge</Typography>
           </a>
