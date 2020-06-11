@@ -17,35 +17,15 @@ const Hero = () => {
   const classes = useStyles();
   return (
     <Grid item xs={12} sm={10}>
-      <Card>
-        <CardContent>
-          <Grid container>
-            <Grid item>
-              <img
-                style={{
-                  height: "10rem",
-                  width: "10rem",
-                  backgroundColor: "black",
-                  display: "inline-block",
-                  borderRadius: "1rem",
-                  alignSelf: "center",
-                  justifySelf: "center",
-                }}
-                alt="My Head shot"
-                src="me.jpg"
-              ></img>
-            </Grid>
-            <Grid item className={classes.bioText}>
-              <Typography variant="h3">Dakota Lewallen</Typography>
-              <Typography xs={12}>
-                Bringing simple solutions to your most challenging problems,
-                from initial concept all the way to automated deployments and
-                monitoring.
-              </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
+      <Grid container>
+        <Grid item className={classes.bioText}>
+          <Typography variant="h3" style={{color: "white"}}>Dakota Lewallen</Typography>
+          <Typography xs={12} style={{color: "white"}}>
+            Bringing simple solutions to your most challenging problems, from
+            initial concept all the way to automated deployments and monitoring.
+          </Typography>
+        </Grid>
+      </Grid>
     </Grid>
   );
 };
