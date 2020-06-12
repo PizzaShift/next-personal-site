@@ -4,19 +4,11 @@ import Logo from "./Logo32.svg";
 
 const Layout = (props) => {
   return (
-    <div className={styles.container}>
-      {/* <div style={}></div> */}
+    <div
+      className={styles.container}
+      style={{ display: "flex", marginTop: "2rem" }}
+    >
       {props.children}
-      {/* <div
-        style={{
-          position: "absolute",
-          width: "50%",
-          position: "absolute",
-          backgroundColor: "#424242",
-          bottom: 0,
-          height: "56px",
-        }}
-      ></div> */}
       <footer
         style={{
           width: "100%",

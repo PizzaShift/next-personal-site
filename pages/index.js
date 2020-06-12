@@ -9,6 +9,8 @@ const DynamicSnakeLoad = dynamic(() => import("../components/snake/snake"), {
   ssr: false,
 });
 
+import Content from "../components/content/Content";
+
 const App = () => {
   return (
     <>
@@ -17,16 +19,17 @@ const App = () => {
           <Head>
             <title>Dakota Lewallen</title>
           </Head>
-          <DynamicSnakeLoad />
-          <span></span>
-          <section
+          {/* <DynamicSnakeLoad /> */}
+          {/* <span
             style={{
-              width: "50%",
+              width: "10px",
               height: "100vh",
+              backgroundColor: "white",
               position: "absolute",
               left: "50%",
             }}
-          ></section>
+          ></span> */}
+          <Content />
         </Layout>
       </ThemeProvider>
     </>
