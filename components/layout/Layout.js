@@ -12,7 +12,7 @@ const Layout = (props) => {
       <footer
         style={{
           width: "100%",
-          position: "absolute",
+          position: "fixed",
           // left: "50vw",
           bottom: 0,
         }}
