@@ -2,10 +2,11 @@ import Grid from "@material-ui/core/Grid";
 import Hero from "../cards/intro";
 import BlogCard from "../cards/blog";
 
-const Content = ({ children }) => {
+const Content = ({ children, navValue }) => {
+  console.log(navValue);
   return (
     <Grid container direction="row">
-      <Grid item xs={1} />
+      <Grid item xs={2} />
       <Grid container spacing={1} xs={10} style={{ marginBottom: "60px" }}>
         <Hero />
         <BlogCard

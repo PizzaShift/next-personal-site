@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 const MyCard = ({ children }) => {
   const classes = useStyles();
   return (
-    <Grid item xs={12}>
+    <Grid item xs={10}>
       <Card>{children}</Card>
     </Grid>
   );

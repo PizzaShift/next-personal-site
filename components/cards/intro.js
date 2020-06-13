@@ -4,7 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
 const Hero = () => (
-  <Grid item xs={12}>
+  <Grid item xs={10}>
     <Card>
       <CardContent>
         {/* <img alt="my bust"></img> */}
@@ -19,8 +19,8 @@ const Hero = () => (
         ></span>
         <Typography>Hi, I'm Dakota Lewallen.</Typography>
         <Typography>
-          I’m here to bring simple solutions to your most challenging problems.
-          From initial concept all the way to automated deployments and
+          I’m here to bring simple solutions to your most challenging problems,
+          from initial concept all the way to automated deployments and
           monitoring.
         </Typography>
       </CardContent>
