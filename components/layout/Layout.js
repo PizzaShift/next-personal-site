@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
       top: "unset",
       bottom: 0,
     },
+    zIndex: 999,
   },
   topContainer: {
     display: "flex",
