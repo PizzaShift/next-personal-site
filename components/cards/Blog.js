@@ -4,7 +4,7 @@ import {
   PersonOutline,
 } from "@material-ui/icons/";
 import { Grid, Typography, CardContent } from "@material-ui/core/";
-import MyCard from "./card";
+import MyCard from "./Card";
 
 const BlogCard = ({ title, description, views, reactions, comments }) => {
   return (
@@ -17,7 +17,6 @@ const BlogCard = ({ title, description, views, reactions, comments }) => {
             <PersonOutline style={{ marginRight: "0.5rem" }} />
             <Typography>{views} Views</Typography>
           </Grid>
-
           <Grid item xs={12} lg={3} style={{ display: "flex" }}>
             <InsertEmoticon style={{ marginRight: "0.5rem" }} />
             <Typography>{reactions} Reactions</Typography>

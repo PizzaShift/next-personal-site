@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Grid, Typography, Button, TextField } from "@material-ui/core/";
 import SendIcon from "@material-ui/icons/Send";
-import MyCard from "./card";
+import MyCard from "./Card";
 
 const Contact = () => {
   const [name, setName] = useState("");

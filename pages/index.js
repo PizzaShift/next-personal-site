@@ -5,7 +5,7 @@ import Layout from "../components/layout/Layout";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 
-const DynamicSnakeLoad = dynamic(() => import("../components/snake/snake"), {
+const DynamicSnakeLoad = dynamic(() => import("../components/snake/Snake"), {
   ssr: false,
 });
 

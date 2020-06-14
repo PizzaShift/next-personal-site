@@ -1,7 +1,9 @@
 import Grid from "@material-ui/core/Grid";
-import Hero from "../cards/intro";
-import BlogCard from "../cards/blog";
-import Contact from "../cards/contact";
+import Hero from "../cards/Hero";
+import BlogCard from "../cards/Blog";
+import Contact from "../cards/Contact";
+import Project from "../cards/Project";
+import Cert from "../cards/Certs";
 
 const Blog = () => (
   <>
@@ -57,13 +59,15 @@ const Blog = () => (
 const navs = {
   blog: <Blog />,
   contact: <Contact />,
+  certifications: <Cert />,
+  projects: <Project />,
 };
 
 const Content = ({ children, navValue }) => {
   console.log(navValue);
   return (
     <Grid container direction="row">
-      <Grid item xs={2} />
+      <Grid item xs={1} sm={2} />
       <Grid container spacing={1} xs={10} style={{ marginBottom: "60px" }}>
         <Hero />
         {navs[navValue]}

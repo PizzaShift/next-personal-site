@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 const Hero = () => {
   const classes = useStyles();
   return (
-    <Grid item xs={10}>
+    <Grid item xs={12} sm={10}>
       <Card>
         <CardContent>
           <Grid container>
