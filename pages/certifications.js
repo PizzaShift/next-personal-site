@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Layout from "../components/layout/Layout";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
-import BlogWrapper from "../components/wrappers/BlogWrapper";
+import Certs from "../components/cards/Certs";
 
 const DynamicSnakeLoad = dynamic(() => import("../components/snake/Snake"), {
   ssr: false,
@@ -29,8 +29,8 @@ const App = () => {
               left: "50%",
             }}
           ></span> */}
-          <Content>
-            <BlogWrapper />
+          <Content navValue="certifications">
+            <Certs />
           </Content>
         </Layout>
       </ThemeProvider>
