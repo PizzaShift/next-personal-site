@@ -46,7 +46,7 @@ const Layout = (props) => {
               "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
           }}
         >
-          <Grid item sm={3} />
+          <Grid item xs={1} sm={3} />
           <Grid item>
             <Link href="/">
               <LinkText className={classes.links}>Blog</LinkText>
@@ -70,7 +70,7 @@ const Layout = (props) => {
               </LinkText>
             </Link>
           </Grid>
-          <Grid item sm={3} />
+          <Grid item xs={1} sm={3} />
           <Grid item>
             <Logo style={{ paddingTop: "0.25rem" }} />
           </Grid>
