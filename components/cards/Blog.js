@@ -7,11 +7,13 @@ import { Grid, Typography, CardContent } from "@material-ui/core/";
 import MyCard from "./Card";
 import Stat from "../stat/Stat";
 
-const BlogCard = ({ title, description, views, reactions, comments }) => {
+const BlogCard = ({ link, title, description, views, reactions, comments }) => {
   return (
     <MyCard>
       <CardContent>
-        <Typography variant={"h3"}>{title}</Typography>
+        <a href={link}>
+          <Typography variant={"h3"}>{title}</Typography>
+        </a>
         <Typography style={{ marginBottom: "0.5em" }}>{description}</Typography>
         <Grid container>
           <Stat Icon={PersonOutline} number={views} type="Views" />

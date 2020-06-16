@@ -8,7 +8,12 @@ const Project = ({ link, title, description, watchers, stars, forks }) => {
     <MyCard>
       <CardContent>
         <a href={link}>
-          <Typography variant={"h3"}>{title}</Typography>
+          <Typography
+            variant={"h3"}
+            style={{ wordBreak: "break-word", hyphens: "auto" }}
+          >
+            {title}
+          </Typography>
         </a>
         <Typography style={{ marginBottom: "0.5em" }}>{description}</Typography>
         <Grid container>

@@ -6,7 +6,12 @@ const Cert = () => {
     <>
       <MyCard>
         <CardContent>
-          <Typography variant={"h3"}>Certified Cloud Practitioner</Typography>
+          <Typography
+            variant={"h3"}
+            style={{ wordBreak: "break-word", hyphens: "manual" }}
+          >
+            Certified Cloud Practitioner
+          </Typography>
           <Typography>Issued: February 2020</Typography>
           <a
             style={{ textDecorationColor: "white", color: "white" }}
@@ -18,7 +23,12 @@ const Cert = () => {
       </MyCard>
       <MyCard>
         <CardContent>
-          <Typography variant={"h3"}>Neo4J Certified Professional</Typography>
+          <Typography
+            variant={"h3"}
+            style={{ wordBreak: "break-word", hyphens: "manual" }}
+          >
+            Neo4J Certified Professional
+          </Typography>
           <Typography>Issued: April 2020</Typography>
           <a
             style={{ textDecorationColor: "white", color: "white" }}
