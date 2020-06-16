@@ -1,7 +1,20 @@
 import Link from "next/link";
+import Router from "next/router";
 import { Link as LinkText, Grid } from "@material-ui/core";
 import Logo from "./Logo32.svg";
 import { makeStyles } from "@material-ui/core/styles";
+import NProgress from "nprogress";
+
+Router.onRouteChangeStart = () => {
+  NProgress.start();
+};
+Router.onRouteChangeComplete = () => {
+  NProgress.done();
+};
+
+Router.onRouteChangeError = () => {
+  NProgress.done();
+};
 
 const useStyles = makeStyles((theme) => ({
   footer: {

@@ -20,9 +20,8 @@ const Hero = () => {
       <Card>
         <CardContent>
           <Grid container>
-            {/* <img alt="my bust"></img> */}
             <Grid item>
-              <span
+              <img
                 style={{
                   height: "10rem",
                   width: "10rem",
@@ -32,7 +31,9 @@ const Hero = () => {
                   alignSelf: "center",
                   justifySelf: "center",
                 }}
-              ></span>
+                alt="My Head shot"
+                src="me.jpg"
+              ></img>
             </Grid>
             <Grid item className={classes.bioText}>
               <Typography variant="h3">Dakota Lewallen</Typography>

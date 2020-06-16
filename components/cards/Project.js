@@ -3,16 +3,18 @@ import { Search, StarOutlined, CallSplit } from "@material-ui/icons/";
 import MyCard from "./Card";
 import Stat from "../stat/Stat";
 
-const Project = ({ title, description }) => {
+const Project = ({ link, title, description, watchers, stars, forks }) => {
   return (
     <MyCard>
       <CardContent>
-        <Typography variant={"h3"}>{title}</Typography>
+        <a href={link}>
+          <Typography variant={"h3"}>{title}</Typography>
+        </a>
         <Typography style={{ marginBottom: "0.5em" }}>{description}</Typography>
         <Grid container>
-          <Stat Icon={Search} number={5} type="Watchers" />
-          <Stat Icon={StarOutlined} number={6} type="Stars" />
-          <Stat Icon={CallSplit} number={0} type="Forks" />
+          <Stat Icon={Search} number={watchers} type="Watchers" />
+          <Stat Icon={StarOutlined} number={stars} type="Stars" />
+          <Stat Icon={CallSplit} number={forks} type="Forks" />
         </Grid>
       </CardContent>
     </MyCard>
