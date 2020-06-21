@@ -10,11 +10,12 @@ const DynamicSnakeLoad = dynamic(() => import("../components/snake/Snake"), {
 
 import Content from "../components/content/Content";
 
-const App = ({ children }) => {
+const App = ({ children, navLocation }) => {
+  console.log(navLocation);
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Layout>
+        <Layout navValue={navLocation}>
           <Head>
             <title>Dakota Lewallen</title>
           </Head>
@@ -28,7 +29,7 @@ const App = ({ children }) => {
               left: "50%",
             }}
           ></span> */}
-          <Content navValue="projects">{children}</Content>
+          <Content>{children}</Content>
         </Layout>
       </ThemeProvider>
     </>

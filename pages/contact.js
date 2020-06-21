@@ -2,7 +2,7 @@ import Contact from "../components/cards/Contact";
 import Root from "../components/root";
 
 const App = () => (
-  <Root>
+  <Root navLocation="/contact">
     <Contact />
   </Root>
 );

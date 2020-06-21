@@ -2,7 +2,7 @@ import Root from "../components/root";
 import BlogWrapper from "../components/wrappers/BlogWrapper";
 
 const App = (props) => (
-  <Root>
+  <Root navLocation="/">
     <BlogWrapper {...props} />
   </Root>
 );

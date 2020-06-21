@@ -2,7 +2,7 @@ import Certs from "../components/cards/Certs";
 import Root from "../components/root";
 
 const App = () => (
-  <Root>
+  <Root navLocation="/certifications">
     <Certs />
   </Root>
 );

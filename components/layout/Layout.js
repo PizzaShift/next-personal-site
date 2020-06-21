@@ -44,6 +44,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Layout = (props) => {
   const classes = useStyles();
+  const { navValue } = props;
+  console.log(navValue);
   return (
     <div className={classes.topContainer}>
       {props.children}
@@ -62,23 +64,61 @@ const Layout = (props) => {
           <Grid item xs={1} sm={3} />
           <Grid item>
             <Link href="/">
-              <LinkText className={classes.links}>Blog</LinkText>
+              <LinkText
+                className={classes.links}
+                style={
+                  navValue === "/"
+                    ? { textDecoration: "underline", fontSize: "large" }
+                    : {}
+                }
+              >
+                Blog
+              </LinkText>
             </Link>
           </Grid>
           <Grid item>
             <Link href="/projects">
-              <LinkText className={classes.links}>Projects</LinkText>
+              <LinkText
+                className={classes.links}
+                style={
+                  navValue === "/projects"
+                    ? { textDecoration: "underline", fontSize: "large" }
+                    : {}
+                }
+              >
+                Projects
+              </LinkText>
             </Link>
           </Grid>
           <Grid item>
             <Link href="/certifications">
-              <LinkText className={classes.links}>Certifications</LinkText>
+              <LinkText
+                className={classes.links}
+                style={
+                  navValue === "/certifications"
+                    ? { textDecoration: "underline", fontSize: "large" }
+                    : {}
+                }
+              >
+                Certifications
+              </LinkText>
             </Link>
           </Grid>
 
           <Grid item>
             <Link href="/contact">
-              <LinkText className={classes.links} style={{ marginRight: 0 }}>
+              <LinkText
+                className={classes.links}
+                style={
+                  navValue === "/contact"
+                    ? {
+                        textDecoration: "underline",
+                        fontSize: "large",
+                        marginRight: 0,
+                      }
+                    : { marginRight: 0 }
+                }
+              >
                 Contact
               </LinkText>
             </Link>

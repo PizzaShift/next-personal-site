@@ -2,7 +2,7 @@ import Root from "../components/root";
 import ProjectWrapper from "../components/wrappers/ProjectWrapper";
 
 const App = (props) => (
-  <Root>
+  <Root navLocation="/projects">
     <ProjectWrapper {...props} />
   </Root>
 );

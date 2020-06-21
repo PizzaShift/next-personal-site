@@ -2,7 +2,6 @@ import Grid from "@material-ui/core/Grid";
 import Hero from "../cards/Hero";
 
 const Content = ({ children, navValue }) => {
-  console.log(navValue);
   return (
     <Grid container direction="row">
       <Grid item xs={1} sm={2} />

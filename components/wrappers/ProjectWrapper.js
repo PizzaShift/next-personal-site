@@ -1,7 +1,6 @@
 import Project from "../cards/Project";
 
 const ProjectWrapper = ({ data }) => {
-  console.log(data[0]);
   return (
     <>
       {data.map((project) => (
