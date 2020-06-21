@@ -1,27 +1,15 @@
 import nodemailer from "nodemailer";
-import AWS from "aws-sdk";
-const region = "us-east-1";
-const secretName = "ContactFormKeys";
-
-// Create a Secrets Manager client
-const client = new AWS.SecretsManager({
-  region: region,
-});
 
 export default async function contact(req, res) {
   if (req.method === "POST") {
     try {
-      const secretValue = await client
-        .getSecretValue({ SecretId: secretName })
-        .promise();
-      const credentials = JSON.parse(secretValue.SecretString);
       const transporter = nodemailer.createTransport({
         host: "email-smtp.us-east-1.amazonaws.com",
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: credentials.SMTP_USER,
-          pass: credentials.SMTP_PSWD,
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PSWD,
         },
       });
       await transporter.sendMail({
