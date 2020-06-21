@@ -6,10 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   bioText: {
-    marginLeft: "1rem",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "0",
-    },
+    marginBottom: "1rem",
   },
 }));
 
@@ -19,8 +16,10 @@ const Hero = () => {
     <Grid item xs={12} sm={10}>
       <Grid container>
         <Grid item className={classes.bioText}>
-          <Typography variant="h3" style={{color: "white"}}>Dakota Lewallen</Typography>
-          <Typography xs={12} style={{color: "white"}}>
+          <Typography variant="h3" style={{ color: "white" }}>
+            Dakota Lewallen
+          </Typography>
+          <Typography xs={12} style={{ color: "white" }}>
             Bringing simple solutions to your most challenging problems, from
             initial concept all the way to automated deployments and monitoring.
           </Typography>
