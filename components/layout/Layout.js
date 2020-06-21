@@ -68,7 +68,11 @@ const Layout = (props) => {
                 className={classes.links}
                 style={
                   navValue === "/"
-                    ? { textDecoration: "underline", fontSize: "large" }
+                    ? {
+                        textDecoration: "underline",
+                        textDecorationColor: "DodgerBlue",
+                        fontSize: "large",
+                      }
                     : {}
                 }
               >
@@ -82,7 +86,11 @@ const Layout = (props) => {
                 className={classes.links}
                 style={
                   navValue === "/projects"
-                    ? { textDecoration: "underline", fontSize: "large" }
+                    ? {
+                        textDecoration: "underline",
+                        textDecorationColor: "DodgerBlue",
+                        fontSize: "large",
+                      }
                     : {}
                 }
               >
@@ -96,7 +104,11 @@ const Layout = (props) => {
                 className={classes.links}
                 style={
                   navValue === "/certifications"
-                    ? { textDecoration: "underline", fontSize: "large" }
+                    ? {
+                        textDecoration: "underline",
+                        textDecorationColor: "DodgerBlue",
+                        fontSize: "large",
+                      }
                     : {}
                 }
               >
@@ -113,6 +125,7 @@ const Layout = (props) => {
                   navValue === "/contact"
                     ? {
                         textDecoration: "underline",
+                        textDecorationColor: "DodgerBlue",
                         fontSize: "large",
                         marginRight: 0,
                       }

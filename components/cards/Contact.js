@@ -69,8 +69,11 @@ const Contact = () => {
             ></TextField>
             <Button
               variant="contained"
-              color="primary"
-              style={{ marginTop: "1rem" }}
+              style={{
+                marginTop: "1rem",
+                backgroundColor: "#0073E6",
+                color: "white",
+              }}
               onClick={() => {
                 fetch("/api/contact", {
                   method: "POST",

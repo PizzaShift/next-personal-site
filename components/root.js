@@ -18,6 +18,7 @@ const App = ({ children, navLocation }) => {
         <Layout navValue={navLocation}>
           <Head>
             <title>Dakota Lewallen</title>
+            <html lang="en" />
           </Head>
           {/* <DynamicSnakeLoad /> */}
           {/* <span

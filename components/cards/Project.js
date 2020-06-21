@@ -18,7 +18,12 @@ const Project = ({ link, title, description, watchers, stars, forks }) => {
         <Typography style={{ marginBottom: "0.5em" }}>{description}</Typography>
         <Grid container>
           <Stat Icon={Search} number={watchers} type="Watchers" />
-          <Stat Icon={StarOutlined} number={stars} type="Stars" />
+          <Stat
+            Icon={StarOutlined}
+            number={stars}
+            type="Stars"
+            iconColor="yellow"
+          />
           <Stat Icon={CallSplit} number={forks} type="Forks" />
         </Grid>
       </CardContent>

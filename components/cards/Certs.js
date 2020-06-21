@@ -1,4 +1,4 @@
-import { Grid, Typography, CardContent } from "@material-ui/core/";
+import { Grid, Typography, CardContent, Button } from "@material-ui/core/";
 import MyCard from "./Card";
 
 const Cert = () => {
@@ -17,7 +17,17 @@ const Cert = () => {
             style={{ textDecorationColor: "white", color: "white" }}
             href="https://www.youracclaim.com/badges/040beb89-0d89-462e-83a3-0029544cc863/public_url"
           >
-            <Typography>Badge</Typography>
+            <Button
+              variant="contained"
+              style={{
+                textTransform: "none",
+                backgroundColor: "#0073E6",
+                color: "white",
+                marginTop: "0.5rem",
+              }}
+            >
+              <Typography>Badge</Typography>
+            </Button>
           </a>
         </CardContent>
       </MyCard>
@@ -34,7 +44,17 @@ const Cert = () => {
             style={{ textDecorationColor: "white", color: "white" }}
             href="https://graphacademy.neo4j.com/certificates/362a1440003ee5e6f6aa98d7bae0849b8b7811ee58714d0ec83d598f3e82ef40.pdf"
           >
-            <Typography>Badge</Typography>
+            <Button
+              variant="contained"
+              style={{
+                textTransform: "none",
+                backgroundColor: "#0073E6",
+                color: "white",
+                marginTop: "0.5rem",
+              }}
+            >
+              <Typography>Badge</Typography>
+            </Button>
           </a>
         </CardContent>
       </MyCard>
