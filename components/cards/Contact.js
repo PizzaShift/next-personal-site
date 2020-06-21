@@ -27,7 +27,14 @@ const Contact = () => {
   return (
     <MyCard>
       <Grid container direction="column">
-        <Typography style={{ marginLeft: "1rem" }} variant="h3">
+        <Typography
+          style={{
+            marginLeft: "1rem",
+            marginTop: "0.5rem",
+            marginBottom: "0.5rem",
+          }}
+          variant="h3"
+        >
           Contact
         </Typography>
         <Typography style={{ marginLeft: "1rem" }}>

@@ -10,7 +10,12 @@ const Project = ({ link, title, description, watchers, stars, forks }) => {
         <a href={link}>
           <Typography
             variant={"h3"}
-            style={{ wordBreak: "break-word", hyphens: "auto" }}
+            style={{
+              wordBreak: "break-word",
+              hyphens: "auto",
+              marginTop: "0.5rem",
+              marginBottom: "0.5rem",
+            }}
           >
             {title}
           </Typography>

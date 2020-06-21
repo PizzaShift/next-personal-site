@@ -8,7 +8,12 @@ const Cert = () => {
         <CardContent>
           <Typography
             variant={"h3"}
-            style={{ wordBreak: "break-word", hyphens: "manual" }}
+            style={{
+              wordBreak: "break-word",
+              hyphens: "manual",
+              marginTop: "0.5rem",
+              marginBottom: "0.5rem",
+            }}
           >
             Certified Cloud Practitioner
           </Typography>
@@ -35,7 +40,12 @@ const Cert = () => {
         <CardContent>
           <Typography
             variant={"h3"}
-            style={{ wordBreak: "break-word", hyphens: "manual" }}
+            style={{
+              wordBreak: "break-word",
+              hyphens: "manual",
+              marginTop: "0.5rem",
+              marginBottom: "0.5rem",
+            }}
           >
             Neo4J Certified Professional
           </Typography>

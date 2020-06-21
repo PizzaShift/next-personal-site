@@ -12,7 +12,12 @@ const BlogCard = ({ link, title, description, views, reactions, comments }) => {
     <MyCard>
       <CardContent>
         <a href={link}>
-          <Typography variant={"h3"}>{title}</Typography>
+          <Typography
+            variant={"h3"}
+            style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}
+          >
+            {title}
+          </Typography>
         </a>
         <Typography style={{ marginBottom: "0.5em" }}>{description}</Typography>
         <Grid container>
