@@ -10,7 +10,7 @@ const App = (props) => (
 export async function getStaticProps(context) {
   const results = await fetch("https://dev.to/api/articles/me/published", {
     headers: {
-      "api-key": "gQz9gz48AB3WfskTgqBXAsFU",
+      "api-key": process.env.DEV_TO_KEY,
     },
   });
   const data = await results.json();
