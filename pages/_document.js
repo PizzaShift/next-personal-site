@@ -16,6 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,700|Material+Icons"
           />
+          <link rel="stylesheet" href="nprogress.css" />
           <style jsx global>
             {`
               html,
