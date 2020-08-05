@@ -36,6 +36,8 @@ class MyDocument extends Document {
               }
             `}
           </style>
+          <script async defer data-domain="dakotalewallen.me" src="https://plausible.io/js/plausible.js">
+          </script>
         </Head>
         <body>
           <Main />
