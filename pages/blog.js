@@ -2,8 +2,8 @@ import Root from "../components/root";
 import BlogWrapper from "../components/wrappers/BlogWrapper";
 
 const App = (props) => (
-  <Root navLocation="/">
-    <div style={{ color: "white" }}>Put something interesting here.</div>
+  <Root navLocation="/blog">
+    <BlogWrapper {...props} />
   </Root>
 );
 
