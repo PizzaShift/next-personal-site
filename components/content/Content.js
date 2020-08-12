@@ -10,19 +10,6 @@ const DynamicSnakeLoad = dynamic(() => import("../snake/Snake"), {
 const Content = ({ children, navValue }) => {
   return (
     <Grid container direction="row">
-      <Grid
-        item
-        xs={6}
-        // sm={2}
-        id="gameContainer"
-        tabIndex="0"
-        style={{
-          width: "50vw",
-          height: "100%",
-        }}
-      >
-        <DynamicSnakeLoad />
-      </Grid>
       {/* <span
         style={{
           width: "10px",
@@ -37,13 +24,27 @@ const Content = ({ children, navValue }) => {
         item
         container
         spacing={1}
-        xs={6}
+        xs={12}
+        sm={6}
         style={{ marginBottom: "60px", justifyContent: "center" }}
       >
-        <Hero />
         {children}
       </Grid>
-      <Grid item xs={1} />
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        // sm={2}
+        id="gameContainer"
+        tabIndex="0"
+        style={{
+          width: "50vw",
+          height: "100%",
+        }}
+      >
+        <DynamicSnakeLoad />
+      </Grid>
+      {/* <Grid item xs={1} /> */}
     </Grid>
   );
 };

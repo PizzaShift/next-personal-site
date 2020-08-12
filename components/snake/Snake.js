@@ -145,9 +145,6 @@ export default function Snake() {
   return (
     <div
       style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
         width: "50vw",
         height: "100vh",
         display: "flex",

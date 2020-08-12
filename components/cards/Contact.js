@@ -27,20 +27,6 @@ const Contact = () => {
   return (
     <MyCard>
       <Grid container direction="column">
-        <Typography
-          style={{
-            marginLeft: "1rem",
-            marginTop: "0.5rem",
-            marginBottom: "0.5rem",
-          }}
-          variant="h3"
-        >
-          Contact
-        </Typography>
-        <Typography style={{ marginLeft: "1rem" }}>
-          If you would like to contact me but don't have social media, feel free
-          to leave your info and a message below.
-        </Typography>
         <div style={{ padding: "1rem" }}>
           <Grid item xs={12}>
             <TextField
