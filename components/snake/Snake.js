@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Grid from "@material-ui/core/Grid";
 
 const gridSize = 20;
 
@@ -143,30 +144,21 @@ export default function Snake() {
 
   return (
     <div
-      id="gameContainer"
-      tabIndex="0"
       style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
         width: "50vw",
-        height: "100%",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "50vw",
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <h1 style={{ color: "white" }}>{statusText}</h1>
-        <h2>Score: {score}</h2>
-      </div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <h1 style={{ color: "white" }}>{statusText}</h1>
+      <h2>Score: {score}</h2>
     </div>
   );
 }
