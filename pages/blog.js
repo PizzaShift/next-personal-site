@@ -1,8 +1,14 @@
+import { Typography, Grid } from "@material-ui/core";
 import Root from "../components/root";
 import BlogWrapper from "../components/wrappers/BlogWrapper";
+import Hero from "../components/cards/Hero";
 
 const App = (props) => (
   <Root navLocation="/blog">
+    <Hero
+      title={"Blog"}
+      description={"All the places that I like to share my thoughts."}
+    />
     <BlogWrapper {...props} />
   </Root>
 );
