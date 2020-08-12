@@ -39,7 +39,6 @@ const Layout = (props) => {
   console.log(navValue);
   return (
     <div className={classes.topContainer}>
-      {props.children}
       <header className={classes.header}>
         <nav className={classes.header}>
           <Grid
@@ -152,6 +151,7 @@ const Layout = (props) => {
           </Grid>
         </nav>
       </header>
+      {props.children}
     </div>
   );
 };
