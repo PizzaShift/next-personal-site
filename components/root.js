@@ -16,10 +16,6 @@ const App = ({ children, navLocation }) => {
     <>
       <ThemeProvider theme={theme}>
         <Layout navValue={navLocation}>
-          <Head>
-            <title>Dakota Lewallen</title>
-            <html lang="en" />
-          </Head>
           {/* <DynamicSnakeLoad /> */}
           {/* <span
             style={{

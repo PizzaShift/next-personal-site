@@ -1,10 +1,22 @@
+import { NextSeo } from "next-seo";
 import Root from "../components/root";
 import ProjectWrapper from "../components/wrappers/ProjectWrapper";
 
 const App = (props) => (
-  <Root navLocation="/projects">
-    <ProjectWrapper {...props} />
-  </Root>
+  <>
+    <NextSeo
+      title="Dakota Lewallen - Projects"
+      description="Dakota Lewallens Projects Page"
+      twitter={{
+        handle: "@fastflowz",
+        site: "@fastflowz",
+        cardType: "summary",
+      }}
+    />
+    <Root navLocation="/projects">
+      <ProjectWrapper {...props} />
+    </Root>
+  </>
 );
 
 export async function getStaticProps(context) {

@@ -1,10 +1,22 @@
+import { NextSeo } from "next-seo";
 import Root from "../components/root";
 import BlogWrapper from "../components/wrappers/BlogWrapper";
 
 const App = (props) => (
-  <Root navLocation="/">
-    <BlogWrapper {...props} />
-  </Root>
+  <>
+    <NextSeo
+      title="Dakota Lewallen - Home"
+      description="Dakota Lewallens Home Page"
+      twitter={{
+        handle: "@fastflowz",
+        site: "@fastflowz",
+        cardType: "summary",
+      }}
+    />
+    <Root navLocation="/">
+      <BlogWrapper {...props} />
+    </Root>
+  </>
 );
 
 export async function getStaticProps(context) {
@@ -14,6 +26,7 @@ export async function getStaticProps(context) {
     },
   });
   const data = await results.json();
+  console.warn(data);
   return {
     props: { data },
   };
