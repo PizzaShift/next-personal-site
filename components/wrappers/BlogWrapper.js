@@ -3,6 +3,7 @@ import fetch from "isomorphic-unfetch";
 import BlogCard from "../cards/Blog";
 
 const Blog = ({ data }) => {
+  console.log(data);
   return (
     <>
       {data.map((post) => (
