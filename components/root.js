@@ -11,10 +11,16 @@ const App = ({ children, navLocation }) => {
     <>
       <ThemeProvider theme={theme}>
         <Layout navValue={navLocation}>
-          <Head>
-            <title>Dakota Lewallen</title>
-            <html lang="en" />
-          </Head>
+          {/* <DynamicSnakeLoad /> */}
+          {/* <span
+            style={{
+              width: "10px",
+              height: "100vh",
+              backgroundColor: "white",
+              position: "absolute",
+              left: "50%",
+            }}
+          ></span> */}
           <Content>{children}</Content>
         </Layout>
       </ThemeProvider>
