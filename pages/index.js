@@ -17,10 +17,13 @@ const App = (props) => {
         <Hero
           title={"Dakota Lewallen"}
           description={
-            "Bringing simple solutions to your most challenging problems, from initial concept all the way to automated deployments and monitoring."
+            "Indie Hacker. Open source developer. Lover of food, family and games."
           }
         />
-        <div style={{ color: "white" }}>Put something interesting here.</div>
+        <Typography style={{ color: "white" }}>
+          Hi 👋️! If you haven't noticed, I'm Dakota. The mind behind this and
+          many other projects.
+        </Typography>
       </Root>
     </>
   );
