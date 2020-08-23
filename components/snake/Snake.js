@@ -78,95 +78,87 @@ export default function Snake() {
   if (window.innerWidth < 1920) {
     return null;
   }
+  const gameCanvas = document.getElementById("gameCanvas");
+  const ctx = gameCanvas?.getContext("2d");
+  const gameContainer = document.getElementById("gameContainer");
+  gameContainer?.addEventListener("keydown", keyPush);
+  function keyPush(evt) {
+    const keyCodes = [37, 38, 39, 40];
+    if (keyCodes.includes(evt.keyCode)) {
+      evt.preventDefault();
+      lastKey = evt.keyCode;
+    } else if (evt.keyCode === 27) {
+      playing = !playing;
+      playerState = {
+        ...playerState,
+        xVelocity: 0,
+        yVelocity: 0,
+      };
+    }
+  }
   let playing = true;
   let lastKey = 0;
   let hasStarted = false;
   let paused = false;
-  let [score, setScore] = useState(0);
-  const [statusText, setStatusText] = useState("Paused!!");
-  const [playerState, setPlayerState] = useState({
+  let score = 0;
+  let statusText = "Paused!";
+  let playerState = {
     xVelocity: 0,
     xPosition: 10,
     yPosition: 10,
     yVelocity: 0,
     trail: [],
     tail: 5,
-  });
+  };
   let appleX = getRandomPosition();
   let appleY = getRandomPosition();
 
   useEffect(() => {
-    const gameContainer = document.getElementById("gameContainer");
-    gameContainer.addEventListener("keydown", keyPush);
-    function keyPush(evt) {
-      const keyCodes = [37, 38, 39, 40];
-      if (keyCodes.includes(evt.keyCode)) {
-        evt.preventDefault();
-        lastKey = evt.keyCode;
-      } else if (evt.keyCode === 27) {
-        playing = !playing;
-        setPlayerState({
-          ...playerState,
-          xVelocity: 0,
-          yVelocity: 0,
-        });
-      }
-    }
-  });
-
-  useEffect(() => {
-    const gameCanvas = document.getElementById("gameCanvas");
-    const ctx = gameCanvas.getContext("2d");
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
-    const doStuff = () => {
+    if (ctx && playerState) {
       ctx.fillStyle = "black";
       ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
-      let intersected = false;
-      if (
-        playerState.xPosition === appleX &&
-        playerState.yPosition === appleY
-      ) {
-        intersected = true;
-        setScore(score++);
-        appleX = getRandomPosition();
-        appleY = getRandomPosition();
+      const doStuff = () => {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
+        let intersected = false;
+        if (
+          playerState.xPosition === appleX &&
+          playerState.yPosition === appleY
+        ) {
+          intersected = true;
+          score++;
+          appleX = getRandomPosition();
+          appleY = getRandomPosition();
+        }
+        Apple({ ctx, x: appleX, y: appleY });
+        Player({
+          ctx,
+          playerState,
+          lastKey,
+          intersected,
+        });
+      };
+      const interval = setInterval(doStuff, 1000 / 15);
+      if (!playing) {
+        clearInterval(interval);
       }
-      Apple({ ctx, x: appleX, y: appleY });
-      setPlayerState(Player({ ctx, playerState, lastKey, intersected }));
-    };
-    const interval = setInterval(doStuff, 1000 / 15);
-    if (!playing) {
-      clearInterval(interval);
     }
   }, [true]);
 
   return (
     <div
-      id="gameContainer"
-      tabIndex="0"
       style={{
-        width: "50vw",
-        height: "100%",
+        // width: "50vw",
+        // height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "50vw",
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <h1 style={{ color: "white" }}>{statusText}</h1>
-        <h2>Score: {score}</h2>
-      </div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <h1 style={{ color: "white" }}>{statusText}</h1>
+      <h2 style={{ color: "white" }}>Score: {score}</h2>
     </div>
   );
 }

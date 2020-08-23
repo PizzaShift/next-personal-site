@@ -1,12 +1,7 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Layout from "../components/layout/Layout";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../theme";
-
-const DynamicSnakeLoad = dynamic(() => import("../components/snake/Snake"), {
-  ssr: false,
-});
 
 import Content from "../components/content/Content";
 
