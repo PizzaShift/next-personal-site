@@ -1,7 +1,4 @@
 import Grid from "@material-ui/core/Grid";
-import dynamic from "next/dynamic";
-import Hero from "../cards/Hero";
-import Snake from "../snake/Snake";
 
 const Content = ({ children, navValue }) => {
   return (

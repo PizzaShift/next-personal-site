@@ -52,7 +52,7 @@ const App = (props) => {
                   "Indie Hacker. Open source developer. Lover of food, family and games."
                 }
               />
-              <Grid item container direction="row" xs={12} sm={5}>
+              <Grid item container direction="row" xs={12} sm={10}>
                 <Grid item xs={12}>
                   <Typography style={{ color: "white" }}>
                     Hi 👋️! If you hadn't noticed, I'm Dakota. The mind behind
@@ -72,26 +72,26 @@ const App = (props) => {
                     </a>
                   </Typography>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} style={{ marginTop: "3rem" }}>
                   <Typography variant="h2" style={{ color: "white" }}>
                     About
                   </Typography>
                   <details>
                     <summary className={classes.summary}>Home</summary>
                     <Typography className={classes.paragraph}>
-                      This landing page
+                      This landing page.
                     </Typography>
                   </details>
                   <details>
                     <summary className={classes.summary}>Blog</summary>
                     <Typography className={classes.paragraph}>
-                      My latest posts to dev.to
+                      My latest posts to dev.to.
                     </Typography>
                   </details>
                   <details>
                     <summary className={classes.summary}>Projects</summary>
                     <Typography className={classes.paragraph}>
-                      My github projects list
+                      A list of my github repositories.
                     </Typography>
                   </details>
                   <details>
@@ -99,20 +99,20 @@ const App = (props) => {
                       Certifications
                     </summary>
                     <Typography className={classes.paragraph}>
-                      Links to my certifications
+                      A collection of links to my certifications.
                     </Typography>
                   </details>
                   <details>
                     <summary className={classes.summary}>Contact</summary>
                     <Typography className={classes.paragraph}>
-                      A contact form
+                      My contact form.
                     </Typography>
                   </details>
                 </Grid>
               </Grid>
-              <Grid item xs={12} sm={5} id="gameContainer" tabIndex="0">
+              {/* <Grid item xs={12} sm={5} id="gameContainer" tabIndex="0">
                 <DynamicSnakeLoad />
-              </Grid>
+              </Grid> */}
             </Grid>
             <Grid item xs={1}></Grid>
           </Grid>
