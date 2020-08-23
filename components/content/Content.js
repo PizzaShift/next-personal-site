@@ -3,10 +3,6 @@ import dynamic from "next/dynamic";
 import Hero from "../cards/Hero";
 import Snake from "../snake/Snake";
 
-const DynamicSnakeLoad = dynamic(() => import("../snake/Snake"), {
-  ssr: false,
-});
-
 const Content = ({ children, navValue }) => {
   return (
     <Grid container direction="row">
@@ -25,24 +21,9 @@ const Content = ({ children, navValue }) => {
         container
         spacing={1}
         xs={12}
-        sm={6}
         style={{ marginBottom: "60px", justifyContent: "center" }}
       >
         {children}
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        // sm={2}
-        id="gameContainer"
-        tabIndex="0"
-        style={{
-          width: "50vw",
-          height: "100%",
-        }}
-      >
-        <DynamicSnakeLoad />
       </Grid>
       {/* <Grid item xs={1} /> */}
     </Grid>

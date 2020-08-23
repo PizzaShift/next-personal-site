@@ -145,8 +145,8 @@ export default function Snake() {
   return (
     <div
       style={{
-        width: "50vw",
-        height: "100vh",
+        // width: "50vw",
+        // height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
