@@ -108,11 +108,11 @@ const Layout = (props) => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="/certifications">
+              <Link href="/reading-list">
                 <LinkText
                   className={classes.links}
                   style={
-                    navValue === "/certifications"
+                    navValue === "/reading-list"
                       ? {
                           textDecoration: "underline",
                           textDecorationColor: "DodgerBlue",
@@ -121,7 +121,7 @@ const Layout = (props) => {
                       : {}
                   }
                 >
-                  Certifications
+                  Reading List
                 </LinkText>
               </Link>
             </Grid>
@@ -140,6 +140,24 @@ const Layout = (props) => {
                   }
                 >
                   Uses
+                </LinkText>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="/certifications">
+                <LinkText
+                  className={classes.links}
+                  style={
+                    navValue === "/certifications"
+                      ? {
+                          textDecoration: "underline",
+                          textDecorationColor: "DodgerBlue",
+                          fontSize: "large",
+                        }
+                      : {}
+                  }
+                >
+                  Certifications
                 </LinkText>
               </Link>
             </Grid>
