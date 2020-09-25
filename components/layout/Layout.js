@@ -126,6 +126,24 @@ const Layout = (props) => {
               </Link>
             </Grid>
             <Grid item>
+              <Link href="/uses">
+                <LinkText
+                  className={classes.links}
+                  style={
+                    navValue === "/uses"
+                      ? {
+                          textDecoration: "underline",
+                          textDecorationColor: "DodgerBlue",
+                          fontSize: "large",
+                        }
+                      : {}
+                  }
+                >
+                  Uses
+                </LinkText>
+              </Link>
+            </Grid>
+            <Grid item>
               <Link href="/contact">
                 <LinkText
                   className={classes.links}
