@@ -4,13 +4,13 @@ This is my personal site where I host a bunch of useless information about mysel
 
 ## Built With
 
-[Next.JS](https://nextjs.org)
-[Vercel](https://vercel.com)
-[React](https://reactjs.org)
-[Material.UI](https://material-ui.com)
-[NProgress](https://ricostacruz.com/nprogress/)
-[Node Mailer](https://nodemailer.com)
-[Strapi](https://strapi.io)
+- [Next.JS](https://nextjs.org)
+- [Vercel](https://vercel.com)
+- [React](https://reactjs.org)
+- [Material.UI](https://material-ui.com)
+- [NProgress](https://ricostacruz.com/nprogress/)
+- [Node Mailer](https://nodemailer.com)
+- [Strapi](https://strapi.io)
 
 ## Authors
 
