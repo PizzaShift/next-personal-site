@@ -23,7 +23,15 @@ const App = ({ data }) => {
   const classes = useStyles();
   return (
     <>
-      <NextSeo />
+      <NextSeo
+        title="Dakota Lewallen - Uses Page"
+        description="Dakota Lewallen's list of the tech he uses."
+        twitter={{
+          handle: "@fastflowz",
+          site: "@fastflowz",
+          cardType: "summary",
+        }}
+      />
       <Root navLocation="/uses">
         <Hero title={"Uses"} description={"My Tech related stuff"} />
         <TableContainer component={Paper}>
