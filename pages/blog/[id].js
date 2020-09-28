@@ -1,6 +1,7 @@
 import Paper from "@material-ui/core/Paper";
 import { Grid, Typography, CardContent, makeStyles } from "@material-ui/core/";
 import { NextSeo } from "next-seo";
+import ReactMarkdown from "react-markdown";
 import Root from "../../components/root";
 import Hero from "../../components/cards/Hero";
 
@@ -16,9 +17,9 @@ const Page = ({ data }) => {
           cardType: "summary",
         }}
       />
-      <Paper>
+      <Paper style={{ padding: "1.5rem" }}>
         <Hero title={data.Title} description={data.Description} />
-        <Typography>{data.Body}</Typography>
+        <ReactMarkdown>{data.Body}</ReactMarkdown>
       </Paper>
     </Root>
   );
