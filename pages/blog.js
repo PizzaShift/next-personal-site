@@ -23,14 +23,14 @@ const App = (props) => (
 );
 
 export async function getStaticProps(context) {
-  const results = await fetch("https://dev.to/api/articles/me/published", {
-    headers: {
-      "api-key": process.env.DEV_TO_KEY,
-    },
+  const location = `${process.env.STRAPI_URL}/blogs`;
+  const resp = await fetch(location, {
+    headers: { Accept: "application/json" },
   });
-  const data = await results.json();
+  const data = await resp.json();
   return {
     props: { data },
   };
 }
+
 export default App;

@@ -67,7 +67,6 @@ const App = ({ data }) => {
 
 export async function getStaticProps(context) {
   const location = `${process.env.STRAPI_URL}/uses`;
-  console.log(location);
   const resp = await fetch(location, {
     headers: { Accept: "application/json" },
   });
