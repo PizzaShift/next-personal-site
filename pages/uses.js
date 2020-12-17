@@ -52,9 +52,7 @@ const App = ({ data }) => {
                   <TableCell>
                     {row.Tags.reduce((coll, curr) => `${coll}, ${curr}`)}
                   </TableCell>
-                  <TableCell>
-                    {row.Links?.reduce((coll, curr) => `${coll}, ${curr}`)}
-                  </TableCell>
+                  <TableCell>{row.Links ?? ""}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
