@@ -30,8 +30,8 @@ const App = (props) => {
         title="Dakota Lewallen - Home"
         description="Dakota Lewallens Home Page"
         twitter={{
-          handle: "@fastflowz",
-          site: "@fastflowz",
+          handle: "@therealdakotal",
+          site: "@therealdakotal",
           cardType: "summary",
         }}
       />

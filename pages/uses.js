@@ -27,8 +27,8 @@ const App = ({ data }) => {
         title="Dakota Lewallen - Uses Page"
         description="Dakota Lewallen's list of the tech he uses."
         twitter={{
-          handle: "@fastflowz",
-          site: "@fastflowz",
+          handle: "@therealdakotal",
+          site: "@therealdakotal",
           cardType: "summary",
         }}
       />
