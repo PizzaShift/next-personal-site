@@ -70,12 +70,18 @@ const App = (props) => {
                     </a>
                   </Typography>
                 </Grid>
-                <Grid item container xs={6} style={{ marginTop: "3rem" }}>
+                <Grid
+                  item
+                  container
+                  xs={12}
+                  sm={6}
+                  style={{ marginTop: "3rem" }}
+                >
                   <Typography variant="h3" className="white-font">
                     Find me on:
                   </Typography>
                   <Grid container>
-                    <Grid item xs={6} className="white-font">
+                    <Grid item xs={12} sm={6} className="white-font">
                       <a
                         href="https://twitter.com/therealdakotal/"
                         className="logo-links"
@@ -84,7 +90,7 @@ const App = (props) => {
                         therealdakotal
                       </a>
                     </Grid>
-                    <Grid item xs={6} className="white-font">
+                    <Grid item xs={12} sm={6} className="white-font">
                       <a
                         href="https://twitch.tv/iamflowz"
                         className="logo-links"
@@ -93,7 +99,7 @@ const App = (props) => {
                         iamflowz
                       </a>
                     </Grid>
-                    <Grid item xs={6} className="white-font">
+                    <Grid item xs={12} sm={6} className="white-font">
                       <a
                         href="https://linkedin.com/in/dakota-lewallen/"
                         className="logo-links"
@@ -102,7 +108,7 @@ const App = (props) => {
                         Dakota Lewallen
                       </a>
                     </Grid>
-                    <Grid item xs={6} className="white-font">
+                    <Grid item xs={12} sm={6} className="white-font">
                       <div className="logo-links">
                         <Discord className="icon-size icon-space" style={{}} />
                         FlowZ #1712
@@ -110,7 +116,7 @@ const App = (props) => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item xs={6} style={{ marginTop: "3rem" }}>
+                <Grid item xs={12} sm={6} style={{ marginTop: "3rem" }}>
                   <Typography
                     variant="h3"
                     className="white-font"
