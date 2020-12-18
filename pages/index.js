@@ -1,5 +1,4 @@
 import { NextSeo } from "next-seo";
-import dynamic from "next/dynamic";
 import { Typography, Grid } from "@material-ui/core";
 import Hero from "../components/cards/Hero";
 import Layout from "../components/layout/Layout";
