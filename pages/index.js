@@ -1,16 +1,14 @@
 import { NextSeo } from "next-seo";
-import dynamic from "next/dynamic";
 import { Typography, Grid } from "@material-ui/core";
-import Root from "../components/root";
 import Hero from "../components/cards/Hero";
 import Layout from "../components/layout/Layout";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { Twitter, LinkedIn } from "@material-ui/icons";
+// Icons are the property of their respective companies.
+import Twitch from "../public/TwitchGlitchWhite.svg";
+import Discord from "../public/Discord-Logo-White.svg";
 
 import theme from "../theme";
-
-const DynamicSnakeLoad = dynamic(() => import("../components/snake/Snake"), {
-  ssr: false,
-});
 
 const useStyles = makeStyles((theme) => ({
   summary: {
@@ -30,8 +28,8 @@ const App = (props) => {
         title="Dakota Lewallen - Home"
         description="Dakota Lewallens Home Page"
         twitter={{
-          handle: "@fastflowz",
-          site: "@fastflowz",
+          handle: "@therealdakotal",
+          site: "@therealdakotal",
           cardType: "summary",
         }}
       />
@@ -72,8 +70,58 @@ const App = (props) => {
                     </a>
                   </Typography>
                 </Grid>
-                <Grid item xs={12} style={{ marginTop: "3rem" }}>
-                  <Typography variant="h2" style={{ color: "white" }}>
+                <Grid
+                  item
+                  container
+                  xs={12}
+                  sm={6}
+                  style={{ marginTop: "3rem" }}
+                >
+                  <Typography variant="h3" className="white-font">
+                    Find me on:
+                  </Typography>
+                  <Grid container>
+                    <Grid item xs={12} sm={6} className="white-font">
+                      <a
+                        href="https://twitter.com/therealdakotal/"
+                        className="logo-links"
+                      >
+                        <Twitter fontSize="large" className="icon-space" />{" "}
+                        therealdakotal
+                      </a>
+                    </Grid>
+                    <Grid item xs={12} sm={6} className="white-font">
+                      <a
+                        href="https://twitch.tv/iamflowz"
+                        className="logo-links"
+                      >
+                        <Twitch className="icon-size icon-space" />
+                        iamflowz
+                      </a>
+                    </Grid>
+                    <Grid item xs={12} sm={6} className="white-font">
+                      <a
+                        href="https://linkedin.com/in/dakota-lewallen/"
+                        className="logo-links"
+                      >
+                        <LinkedIn fontSize="large" className="icon-space" />{" "}
+                        Dakota Lewallen
+                      </a>
+                    </Grid>
+                    <Grid item xs={12} sm={6} className="white-font">
+                      <div className="logo-links">
+                        <Discord className="icon-size icon-space" style={{}} />
+                        FlowZ #1712
+                      </div>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item xs={12} sm={6} style={{ marginTop: "3rem" }}>
+                  <Typography
+                    variant="h3"
+                    className="white-font"
+                    style={{ color: "white" }}
+                  >
                     About
                   </Typography>
                   <details>

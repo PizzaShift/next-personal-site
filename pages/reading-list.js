@@ -28,8 +28,8 @@ const App = ({ data }) => {
         title="Dakota Lewallen - Reading List"
         description="Dakota Lewallen's Reading List"
         twitter={{
-          handle: "@fastflowz",
-          site: "@fastflowz",
+          handle: "@therealdakotal",
+          site: "@therealdakotal",
           cardType: "summary",
         }}
       />

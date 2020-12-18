@@ -9,8 +9,8 @@ const App = (props) => (
       title="Dakota Lewallen - Projects"
       description="Dakota Lewallens Projects Page"
       twitter={{
-        handle: "@fastflowz",
-        site: "@fastflowz",
+        handle: "@therealdakotal",
+        site: "@therealdakotal",
         cardType: "summary",
       }}
     />

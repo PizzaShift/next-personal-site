@@ -7,7 +7,6 @@
 html,
 body {
   font-family: "Nunito";
-  /* background-color: #294976; */
   background-color: rgb(30, 30, 30);
   padding: 0;
   margin: 0;
@@ -16,4 +15,26 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.white-font {
+  color: white;
+}
+
+.logo-links {
+  display: flex;
+  align-items: center;
+}
+
+.icon-size {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-space {
+  margin-right: 1rem;
 }
