@@ -4,6 +4,7 @@ import Hero from "../components/cards/Hero";
 import Layout from "../components/layout/Layout";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import { Twitter, LinkedIn } from "@material-ui/icons";
+// Icons are the property of their respective companies.
 import Twitch from "../public/TwitchGlitchWhite.svg";
 import Discord from "../public/Discord-Logo-White.svg";
 
